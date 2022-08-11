@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript/base"
+  ],
+  "parserOptions": { 
+    "project" : "./tsconfig.json"
+  },
+  "rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+  "linebreak-style": 0,
+  "@typescript-eslint/ban-ts-comment": "off"
+}
+}
