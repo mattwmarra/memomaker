@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import DealMemoInterface from '../DealMemoInterface.ts';
+import DealMemoInterface from '../interfaces/DealMemoInterface.ts';
 
 const initialState: DealMemoInterface = {
   artist: '',
@@ -34,8 +34,8 @@ const initialState: DealMemoInterface = {
   assistant: 0,
   premiereTickets: 0,
   physicalCopy: '',
-  signed : false
-}
+  signed: false,
+};
 
 const rootSlice = createSlice({
   name: 'root',
@@ -46,8 +46,8 @@ const rootSlice = createSlice({
     },
     updateProjectName: (state: DealMemoInterface, action: PayloadAction<string>) => {
       state.projectName = action.payload;
-    }
+    },
   },
-})
+});
 
 export default rootSlice.reducer;
