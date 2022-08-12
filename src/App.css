@@ -4,3 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+.form-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+

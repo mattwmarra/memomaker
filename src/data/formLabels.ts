@@ -1,183 +1,214 @@
 const labels = {
   'Artist': {
-    name: 'Artist',
-    id: '',
+    name: 'Artist Name',
+    id: 'artist',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Loan/Out': {
     name: 'Loan/Out',
-    id: '',
+    id: 'loanOut',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Role': {
     name: 'Role',
-    id: '',
+    id: 'role',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Project Name': {
     name: 'Project Name',
-    id: '',
+    id: 'project',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Company': {
     name: 'Company',
-    id: '',
+    id: 'company',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Compensation': {
     name: 'Compensation',
-    id: '',
+    id: 'compensation',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Contingency': {
     name: 'Contingency',
-    id: '',
+    id: 'contigency',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Guarantee': {
     name: 'Guarantee',
-    id: '',
+    id: 'guarantee',
     type: 'longtext',
     placeholder: '',
+    value: ''
   },
   'Dates': {
     name: 'Dates',
-    id: '',
+    id: 'dates',
     type: 'date',
     placeholder: '',
+    value: ''
   },
   'Location': {
     name: 'Location',
-    id: '',
+    id: 'location',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Payment': {
     name: 'Payment',
-    id: '',
+    id: 'payment',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Wire Information': {
     name: 'Wire Information',
-    id: '',
+    id: 'wireInformation',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Work Days': {
     name: 'Work Days',
-    id: '',
+    id: 'workDay',
     type: 'number',
     placeholder: '',
+    value: ''
   },
   'Post Production Days': {
     name: 'Post Production Days',
-    id: '',
+    id: 'postProdDays',
     type: 'number',
     placeholder: '',
+    value: ''
   },
   'Transportation': {
     name: 'Transportation',
-    id: '',
+    id: 'transportation',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Dressing Room': {
     name: 'Dressing Room',
-    id: '',
+    id: 'dressingRoom',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Directors Meeting': {
     name: 'Directors Meeting',
-    id: '',
+    id: 'directorsMeeting',
     type: 'longtext',
     placeholder: '',
+    value: ''
   },
   'Per Diem': {
     name: 'Per Diem',
-    id: '',
+    id: 'perDiem',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Billing Block': {
     name: 'Billing Block',
-    id: '',
+    id: 'billingBlock',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Approvals': {
     name: 'Approvals',
-    id: '',
+    id: 'approvals',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Merchandising': {
     name: 'Merchandising',
-    id: '',
+    id: 'merchandising',
     type: 'longtext',
     placeholder: '',
+    value: ''
   },
   'Union': {
     name: 'Union',
-    id: '',
+    id: 'union',
     type: 'longtext',
     placeholder: '',
+    value: ''
   },
   'F&O': {
     name: 'F&O',
-    id: '',
+    id: 'fo',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Idemnities': {
     name: 'Idemnities',
-    id: '',
+    id: 'idemnities',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Special Provisions': {
     name: 'Special Provisions',
-    id: '',
+    id: 'provisions',
     type: 'longtext',
     placeholder: '',
+    value: ''
   },
   'Makeup, Hair, & Wardrobe': {
     name: 'Makeup, Hair, & Wardrobe',
     id: 'MHWardrobe',
     type: 'text',
     placeholder: '',
+    value: ''
   },
   'Security Guard': {
     name: 'Security Guard',
-    id: '',
-    type: 'text',
+    id: 'security',
+    type: 'number',
     placeholder: '',
+    value: ''
   },
   'Personal Assistant': {
     name: 'Personal Assistant',
-    id: '',
-    type: 'text',
+    id: 'assistant',
+    type: 'number',
     placeholder: '',
+    value: ''
   },
   'Premiere Tickets': {
     name: 'Premiere Tickets',
-    id: '',
+    id: 'premiereTickets',
     type: 'text',
     placeholder: '',
+    value: ''
   },
-  'DVD / Blue-Ray Cop': {
-    name: 'DVD / Blue-Ray Cop',
+  'DVD / Blue-Ray Copy': {
+    name: 'DVD / Blue-Ray Copy',
+    physicalCopy: '',
     id: '',
     type: 'text',
     placeholder: '',
+    value: ''
   },
 };
 export default labels;
