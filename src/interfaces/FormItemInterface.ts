@@ -4,4 +4,5 @@ export default interface FormItemInterface {
   placeholder: string;
   name: string;
   value: string;
+  description: string
 }

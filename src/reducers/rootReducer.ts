@@ -1,18 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import DealMemoInterface from '../interfaces/DealMemoInterface.ts';
 
-const initialState: DealMemoInterface = {
+const initialState = {
   artist: '',
   loanOut: '',
   project: '',
   company: '',
   compensation: {
     numerical: 0,
-    textual: ''
+    textual: '',
   },
   contigency: '',
   guarantee: '',
-  dates: [Date],
+  dates: '',
   location: '',
   payment: '',
   wireInformation: '',
@@ -35,19 +35,19 @@ const initialState: DealMemoInterface = {
   premiereTickets: 0,
   physicalCopy: '',
   signed: false,
-};
+} as DealMemoInterface;
 
 const rootSlice = createSlice({
   name: 'root',
   initialState,
   reducers: {
-    updateArtist: (state: DealMemoInterface, action: PayloadAction<string>) => {
-      state.artist = action.payload;
-    },
-    updateProjectName: (state: DealMemoInterface, action: PayloadAction<string>) => {
-      state.projectName = action.payload;
+    populateForm: (state: DealMemoInterface, action: PayloadAction) => {
+      state = action.payload;
+      return state;
     },
   },
 });
+
+export const { populateForm } = rootSlice.actions;
 
 export default rootSlice.reducer;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
-import { useSelector } from 'react-redux';
 import labels from '../data/formLabels';
 
 const styles = StyleSheet.create({
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function DealMemo() {
+export default function DealMemo(props) {
   const months = [
     'January',
     'February',
@@ -58,13 +57,18 @@ export default function DealMemo() {
         <View style={styles.section}>
           <Text style={styles.h1}>Term Sheet</Text>
           <Text style={styles.h2}>Confidential</Text>
-          <Text style={styles.h2}>Pay or Play:</Text>
+          <Text style={styles.h3}>Pay or Play:</Text>
           <Text>{`${month} ${day}, ${year}
           `}</Text>
         </View>
         <View style={styles.body}>
           {Object.values(labels).map((item) => {
-            return <Text style={styles.lineItem}>{item.name}:</Text>;
+            const value = props.data[item.id];
+            return (
+              <Text key={item.id} style={styles.lineItem}>
+                {item.name}: {value}
+              </Text>
+            );
           })}
         </View>
       </Page>

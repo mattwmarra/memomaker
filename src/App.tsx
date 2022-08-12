@@ -7,7 +7,12 @@ import DealMemo from './components/DealMemo.tsx';
 import labels from './data/formLabels.ts';
 import FormItem from './components/FormItem';
 import FormItemInterface from './interfaces/FormItemInterface';
+import { useDispatch } from 'react-redux';
+import { populateForm } from './reducers/rootReducer';
+import DealMemoWrapper from './components/DealMemoWrapper';
 function App() {
+  const dispatch = useDispatch();
+
   const [formState, setFormState] = useState({
     artist: '',
     loanOut: '',
@@ -43,18 +48,17 @@ function App() {
     physicalCopy: '',
     signed: false,
   });
-  const store = configureStore({
-    reducer: rootReducer,
-  });
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    dispatch(populateForm(formState));
+  };
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     setFormState({
       ...formState,
       [e?.target?.id]: e?.target.value,
     });
-  }
+  };
 
   return (
     <div className="App">
@@ -67,17 +71,18 @@ function App() {
               id={item.id}
               key={item.id}
               type={item.type}
+              description={item.description}
               placeholder={item.placeholder}
               handleChange={handleChange}
-              value={item.value}
+              value={formState[item.id]}
             />
           );
         })}
       </div>
-      <button type="button">Generate Document</button>
-      <PDFViewer className="pdf-viewer">
-        <DealMemo className="pdf-viewer" />
-      </PDFViewer>
+      <button type="button" onClick={handleSubmit}>
+        Generate Document
+      </button>
+      <DealMemoWrapper />
     </div>
   );
 }
