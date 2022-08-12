@@ -1,10 +1,17 @@
 import React from 'react';
 import FormItemInterface from '../interfaces/FormItemInterface';
 
-export default function FormItem(
-  { id, type, placeholder, name, value }: FormItemInterface,
-  { handleChange },
-) {
+export default function FormItem({
+  id,
+  type,
+  placeholder,
+  name,
+  value,
+  handleChange,
+}) {
+  const onChange = (e) => {
+    handleChange(e);
+  };
   const renderSwitch = (type, id, placeholder) => {
     switch (type) {
       case 'longtext':
@@ -14,18 +21,18 @@ export default function FormItem(
             placeholder={placeholder}
             onChange={handleChange}
             required
-            defaultValue={value}
+            value={value}
           />
         );
       default:
         return (
           <input
             type={type}
-            id={type}
+            id={id}
             placeholder={placeholder}
             required
-            defaultValue={value}
-            onChange={handleChange}
+            value={value}
+            onChange={onChange}
           />
         );
     }

@@ -34,13 +34,13 @@ const labels = {
     placeholder: '',
     value: ''
   },
-  'Compensation': {
-    name: 'Compensation',
-    id: 'compensation',
-    type: 'text',
-    placeholder: '',
-    value: ''
-  },
+  // 'Compensation': {
+  //   name: 'Compensation',
+  //   id: 'compensation',
+  //   type: 'text',
+  //   placeholder: '',
+  //   value: ''
+  // },
   'Contingency': {
     name: 'Contingency',
     id: 'contigency',
