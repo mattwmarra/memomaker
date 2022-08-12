@@ -8,6 +8,7 @@ export default function FormItem({
   name,
   value,
   handleChange,
+  description,
 }) {
   const onChange = (e) => {
     handleChange(e);
@@ -39,7 +40,10 @@ export default function FormItem({
   };
   return (
     <div className="form-item">
-      <label htmlFor={id}>{name}:</label>
+      <div>
+        <label htmlFor={id}>{name}:</label>
+        <p>{description}</p>
+      </div>
       {renderSwitch(type, id, placeholder)}
     </div>
   );

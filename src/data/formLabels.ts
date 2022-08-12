@@ -3,204 +3,233 @@ const labels = {
     name: 'Artist Name',
     id: 'artist',
     type: 'text',
-    placeholder: '',
-    value: ''
+    placeholder: 'Kit Harrington',
+    value: '',
+    description: ''
   },
   'Loan/Out': {
     name: 'Loan/Out',
     id: 'loanOut',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Role': {
     name: 'Role',
     id: 'role',
     type: 'text',
-    placeholder: '',
-    value: ''
+    placeholder: 'John Snow',
+    value: '',
+    description: ''
   },
   'Project Name': {
     name: 'Project Name',
     id: 'project',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: 'Name of the project, include whether it is a feature, television, or new media'
   },
   'Company': {
     name: 'Company',
     id: 'company',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   // 'Compensation': {
   //   name: 'Compensation',
   //   id: 'compensation',
   //   type: 'text',
   //   placeholder: '',
-  //   value: ''
+  //   value: '',
+  //   description: ''
   // },
   'Contingency': {
     name: 'Contingency',
     id: 'contigency',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Guarantee': {
     name: 'Guarantee',
     id: 'guarantee',
     type: 'longtext',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Dates': {
     name: 'Dates',
     id: 'dates',
     type: 'date',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Location': {
     name: 'Location',
     id: 'location',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Payment': {
     name: 'Payment',
     id: 'payment',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Wire Information': {
     name: 'Wire Information',
     id: 'wireInformation',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Work Days': {
     name: 'Work Days',
     id: 'workDay',
     type: 'number',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Post Production Days': {
     name: 'Post Production Days',
     id: 'postProdDays',
     type: 'number',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Transportation': {
     name: 'Transportation',
     id: 'transportation',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Dressing Room': {
     name: 'Dressing Room',
     id: 'dressingRoom',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Directors Meeting': {
     name: 'Directors Meeting',
     id: 'directorsMeeting',
     type: 'longtext',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Per Diem': {
     name: 'Per Diem',
     id: 'perDiem',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Billing Block': {
     name: 'Billing Block',
     id: 'billingBlock',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Approvals': {
     name: 'Approvals',
     id: 'approvals',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Merchandising': {
     name: 'Merchandising',
     id: 'merchandising',
     type: 'longtext',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Union': {
     name: 'Union',
     id: 'union',
     type: 'longtext',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'F&O': {
     name: 'F&O',
     id: 'fo',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Idemnities': {
     name: 'Idemnities',
     id: 'idemnities',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Special Provisions': {
     name: 'Special Provisions',
     id: 'provisions',
     type: 'longtext',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Makeup, Hair, & Wardrobe': {
     name: 'Makeup, Hair, & Wardrobe',
     id: 'MHWardrobe',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Security Guard': {
     name: 'Security Guard',
     id: 'security',
     type: 'number',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Personal Assistant': {
     name: 'Personal Assistant',
     id: 'assistant',
     type: 'number',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'Premiere Tickets': {
     name: 'Premiere Tickets',
     id: 'premiereTickets',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
   'DVD / Blue-Ray Copy': {
     name: 'DVD / Blue-Ray Copy',
@@ -208,7 +237,8 @@ const labels = {
     id: '',
     type: 'text',
     placeholder: '',
-    value: ''
+    value: '',
+    description: ''
   },
 };
 export default labels;

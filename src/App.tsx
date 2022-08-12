@@ -71,6 +71,7 @@ function App() {
               id={item.id}
               key={item.id}
               type={item.type}
+              description={item.description}
               placeholder={item.placeholder}
               handleChange={handleChange}
               value={formState[item.id]}
