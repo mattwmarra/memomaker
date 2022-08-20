@@ -19,45 +19,12 @@ import {
   details,
   agreements,
 } from './data/formItems.ts';
-import FormSection from './components/FormSection';
+import initialState from './initialState.ts';
+import FormSection from './components/FormSection.tsx';
 function App() {
   const dispatch = useDispatch();
   const [displayDocument, setDisplayDocument] = useState(false);
-  const [formState, setFormState] = useState({
-    artist: '',
-    loanOut: '',
-    project: '',
-    company: '',
-    compensation: {
-      numerical: 0,
-      textual: '',
-    },
-    contigency: '',
-    guarantee: '',
-    dates: [Date],
-    location: '',
-    payment: '',
-    wireInformation: '',
-    workDay: 0,
-    postProdDays: 0,
-    transportation: '',
-    dressingRoom: '',
-    directorsMeeting: '',
-    perDiem: 0,
-    billingBlock: '',
-    approvals: 0,
-    merchandising: '',
-    union: '',
-    fo: '',
-    idemnities: '',
-    provisions: '',
-    MHWardrobe: '',
-    security: 0,
-    assistant: 0,
-    premiereTickets: 0,
-    physicalCopy: '',
-    signed: false,
-  });
+  const [formState, setFormState] = useState(initialState);
 
   const handleSubmit = () => {
     dispatch(populateForm(formState));
@@ -90,6 +57,12 @@ function App() {
         <FormSection
           name="Agency Information"
           object={agency}
+          handleChange={handleChange}
+          formState={formState}
+        />
+        <FormSection
+          name="Manager Information"
+          object={manager}
           handleChange={handleChange}
           formState={formState}
         />

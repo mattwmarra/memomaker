@@ -70,7 +70,7 @@ export default function DealMemo(props) {
             }
             return (
               <Text key={item.id} style={styles.lineItem}>
-                {item.name}:
+                {item.name}: {value}
               </Text>
             );
           })}

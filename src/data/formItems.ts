@@ -1,7 +1,7 @@
 import FormItemClass  from "../FormItemClass.ts";
 
 export const primary = [
-  new FormItemClass('Artist Name', 'artist', 'text', 'Kit Harrington'),
+  new FormItemClass('Artist Name', 'artistName', 'text', 'Kit Harrington'),
   new FormItemClass('Project Name', 'projectName', 'text', 'Game of Thrones'),
   new FormItemClass('Project Start Date', 'startDate', 'date'),
   new FormItemClass('Role', 'role', 'text', 'Kit Harrington'),
@@ -31,14 +31,14 @@ export const manager = [
   new FormItemClass('Phone', 'managerPhone', 'tel', '(000) 000 0000'),
 ];
 export const compensation = [
-  new FormItemClass('Loan/Out: EIN Number', 'loanoutNumber', 'text', '##############'),
+  new FormItemClass('Loan/Out: EIN Number', 'loanOutNumber', 'text', '##############'),
   new FormItemClass('Pay or Play', 'payOrPlay', 'radio'),
   new FormItemClass('Work Days', 'workDays', 'text', '0'),
   new FormItemClass('Travel Days', 'travelDays', 'text', '0'),
   new FormItemClass('Payment', 'payment', 'text', '0'),
   new FormItemClass('Per Diem', 'perDiem', 'text', '0'),
-  new FormItemClass('Billing Name', 'billingName', 'text', '0'),
-  new FormItemClass('Other Details', 'details', 'bigText', 'Additional details'),
+  new FormItemClass('Billing Block', 'billingBlock', 'text', '0', 'e.g. Kit Harrington as Jon Snow'),
+  new FormItemClass('Other Details', 'otherDetails', 'bigText', 'Additional details'),
   new FormItemClass('Rehearsals/Fittings', 'rehearsalsAndFittings', 'bigText', ''),
 ];
 

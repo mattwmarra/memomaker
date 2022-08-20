@@ -1,35 +1,57 @@
+import { agency } from './../data/formItems';
+import Address from "../address.ts";
+
 export default interface DealMemoInterface {
-  artist: string,
-  loanOut: string,
-  project: string,
-  company: string,
-  compensation: {
-    numerical: number,
-    textual: string
-  }
-  contigency: string,
-  guarantee: string,
-  dates: [Date],
-  location: string,
+  artistName: string,
+  projectName: string,
+  startDate : Date,
+  role: string,
+  artistEmail: string,
+  artistCell: string,
+  idNumber: string,
+  artistAddress: Address,
+
+  // production company info
+  companyName: string,
+  producerName: string,
+  producerEmail: string,
+  producerPhone: string,
+
+  // agency company info
+  agencyName: string,
+  agencyAddres: Address,
+  agencyEmail: string,
+  agencyPhone: string,
+
+  // production company info
+  managerName: string,
+  managerAddres: Address,
+  managerEmail: string,
+  managerPhone: string,
+
+  loanOutNumber: string,
+  payOrPlay: any,
+  workDays: number,
+  travelDays: number,
   payment: string,
-  wireInformation: string,
-  workDay: any,
-  postProdDays: number,
-  transportation: string,
-  dressingRoom: string,
-  directorsMeeting: string,
   perDiem: number,
   billingBlock: string,
-  approvals: any,
-  merchandising: string,
-  union: string,
-  fo: string,
-  idemnities: string,
-  provisions: string,
-  MHWardrobe: string,
-  security: number,
-  assistant: number
+  otherDetails: string,
+  rehearsalsAndFittings: string,
+
+  // details
+  transportation: string,
+  dressingRoom: string,
+  lodging: string,
+  hairDetails: string,
+  makeupDetails: string,
+  specialArrangements: string,
+  postProductionDays: number,
+  ADRDays: number,
+
+  // agreements
+  personalAssistant: number
   premiereTickets: number,
   physicalCopy: string
-  signed : boolean
+  additionalNotes : string
 }

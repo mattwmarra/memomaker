@@ -6,10 +6,7 @@ const initialState = {
   loanOut: '',
   project: '',
   company: '',
-  compensation: {
-    numerical: 0,
-    textual: '',
-  },
+  compensation: 0,
   contigency: '',
   guarantee: '',
   dates: '',
