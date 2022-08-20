@@ -64,9 +64,13 @@ export default function DealMemo(props) {
         <View style={styles.body}>
           {Object.values(labels).map((item) => {
             const value = props.data[item.id];
+            console.log(item);
+            if (!value) {
+              return;
+            }
             return (
               <Text key={item.id} style={styles.lineItem}>
-                {item.name}: {value}
+                {item.name}:
               </Text>
             );
           })}

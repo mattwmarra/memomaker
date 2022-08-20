@@ -13,6 +13,7 @@ export default function FormItem({
   const onChange = (e) => {
     handleChange(e);
   };
+  const addDate = () => {};
   const renderSwitch = (type, id, placeholder) => {
     switch (type) {
       case 'longtext':
@@ -24,6 +25,15 @@ export default function FormItem({
             required
             value={value}
           />
+        );
+      case 'date':
+        return (
+          <div>
+            <button onClick={addDate} type="button">
+              +
+            </button>
+            <input type="date" />
+          </div>
         );
       default:
         return (

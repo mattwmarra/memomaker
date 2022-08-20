@@ -1,27 +1,15 @@
 const labels = {
-  'Artist': {
+ /*
+  * PRIMARY GROUP DATA
+  */
+  Artist: {
     name: 'Artist Name',
     id: 'artist',
     type: 'text',
     placeholder: 'Kit Harrington',
     value: '',
-    description: ''
-  },
-  'Loan/Out': {
-    name: 'Loan/Out',
-    id: 'loanOut',
-    type: 'text',
-    placeholder: '',
-    value: '',
-    description: ''
-  },
-  'Role': {
-    name: 'Role',
-    id: 'role',
-    type: 'text',
-    placeholder: 'John Snow',
-    value: '',
-    description: ''
+    description: '',
+    group: 'primary',
   },
   'Project Name': {
     name: 'Project Name',
@@ -29,31 +17,168 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: 'Name of the project, include whether it is a feature, television, or new media'
+    description: 'Name of the project, include whether it is a feature, television, or new media',
+    group: 'primary',
   },
-  'Company': {
-    name: 'Company',
-    id: 'company',
+  'Start Date': {
+    name: 'Project Start Date',
+    id: 'startDate',
+    type: 'date',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'primary',
+  },
+  Role: {
+    name: 'Role',
+    id: 'role',
+    type: 'text',
+    placeholder: 'John Snow',
+    value: '',
+    description: '',
+    group: '',
+},
+  'Artist Email': {
+    name: 'Artist Email',
+    id: 'artistEmail',
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: 'primary',
   },
-  // 'Compensation': {
-  //   name: 'Compensation',
-  //   id: 'compensation',
-  //   type: 'text',
-  //   placeholder: '',
-  //   value: '',
-  //   description: ''
-  // },
+  'Artist Cell': {
+    name: 'Artist Cell',
+    id: 'artistCell',
+    type: 'tel',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'primary',
+  },
+  'Union Number / Social Security Number': {
+    name: 'Union Number / Social Security Number',
+    id: 'idNumber',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'primary',
+  },
+  'Mailing Address': {
+    name: 'Mailing Address',
+    id: 'address',
+    type: 'address',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'primary',
+  },
+   /*
+  * PRODUCTION COMPANY DATA
+  */
+  'Production Company': {
+    name: 'Production Company',
+    id: 'productionCompany',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'productionCompany',
+  },
+  'Producer': {
+    name: 'Producer',
+    id: 'producer',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'productionCompany',
+  },
+  'Production Phone': {
+    name: 'Phone',
+    id: 'productionPhone',
+    type: 'tel',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'productionCompany',
+  },
+  'Production Email': {
+    name: 'Email',
+    id: 'productionEmail',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: 'productionCompany',
+  },
+     /*
+  * Agency DATA
+  */
+  'Agency Name': {
+    name: 'Agency Name',
+    id: 'agencyName',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: '',
+  },
+  'Agency Address': {
+    name: 'Agency Address',
+    id: 'producer',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: '',
+  },
+  'Production Phone': {
+    name: 'Phone',
+    id: 'productionPhone',
+    type: 'tel',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: '',
+  },
+  'Production Email': {
+    name: 'Email',
+    id: 'productionEmail',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: '',
+  },
+  'Loan/Out': {
+    name: 'Loan Out',
+    id: 'loanOut',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: '',
+  },
+
+  'Compensation': {
+    name: 'Compensation',
+    id: 'compensation',
+    type: 'text',
+    placeholder: '',
+    value: '',
+    description: '',
+    group: ''
+  },
   'Contingency': {
     name: 'Contingency',
     id: 'contigency',
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Guarantee': {
     name: 'Guarantee',
@@ -61,7 +186,8 @@ const labels = {
     type: 'longtext',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Dates': {
     name: 'Dates',
@@ -69,7 +195,8 @@ const labels = {
     type: 'date',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Location': {
     name: 'Location',
@@ -77,7 +204,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Payment': {
     name: 'Payment',
@@ -85,7 +213,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Wire Information': {
     name: 'Wire Information',
@@ -93,7 +222,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Work Days': {
     name: 'Work Days',
@@ -101,7 +231,8 @@ const labels = {
     type: 'number',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Post Production Days': {
     name: 'Post Production Days',
@@ -109,7 +240,8 @@ const labels = {
     type: 'number',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Transportation': {
     name: 'Transportation',
@@ -117,7 +249,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Dressing Room': {
     name: 'Dressing Room',
@@ -125,7 +258,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Directors Meeting': {
     name: 'Directors Meeting',
@@ -133,7 +267,8 @@ const labels = {
     type: 'longtext',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Per Diem': {
     name: 'Per Diem',
@@ -141,7 +276,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Billing Block': {
     name: 'Billing Block',
@@ -149,7 +285,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Approvals': {
     name: 'Approvals',
@@ -157,7 +294,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Merchandising': {
     name: 'Merchandising',
@@ -165,7 +303,8 @@ const labels = {
     type: 'longtext',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Union': {
     name: 'Union',
@@ -173,7 +312,8 @@ const labels = {
     type: 'longtext',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'F&O': {
     name: 'F&O',
@@ -181,7 +321,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Idemnities': {
     name: 'Idemnities',
@@ -189,7 +330,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Special Provisions': {
     name: 'Special Provisions',
@@ -197,7 +339,8 @@ const labels = {
     type: 'longtext',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Makeup, Hair, & Wardrobe': {
     name: 'Makeup, Hair, & Wardrobe',
@@ -205,7 +348,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Security Guard': {
     name: 'Security Guard',
@@ -213,7 +357,8 @@ const labels = {
     type: 'number',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Personal Assistant': {
     name: 'Personal Assistant',
@@ -221,7 +366,8 @@ const labels = {
     type: 'number',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'Premiere Tickets': {
     name: 'Premiere Tickets',
@@ -229,7 +375,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
   'DVD / Blue-Ray Copy': {
     name: 'DVD / Blue-Ray Copy',
@@ -238,7 +385,8 @@ const labels = {
     type: 'text',
     placeholder: '',
     value: '',
-    description: ''
+    description: '',
+    group: ''
   },
 };
 export default labels;
