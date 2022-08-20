@@ -8,6 +8,9 @@
   },
   "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+  "import/extensions": [1, {
+    "extensions": [".ts"]
+  }],
   "linebreak-style": 0,
   "@typescript-eslint/ban-ts-comment": "off"
 }
