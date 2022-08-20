@@ -1,5 +1,4 @@
 import React from 'react';
-import FormItemInterface from '../interfaces/FormItemInterface';
 
 export default function FormItem({
   id,
@@ -13,7 +12,6 @@ export default function FormItem({
   const onChange = (e) => {
     handleChange(e);
   };
-  const addDate = () => {};
   const renderSwitch = (type, id, placeholder) => {
     switch (type) {
       case 'longtext':
@@ -29,11 +27,17 @@ export default function FormItem({
       case 'date':
         return (
           <div>
-            <button onClick={addDate} type="button">
-              +
-            </button>
             <input type="date" />
           </div>
+        );
+      case 'radio':
+        return (
+          <>
+            <label htmlFor="payOrPlay">Pay</label>
+            <input type="radio" name="payOrPlay" id="payOrPlay" value="Pay" />
+            <label htmlFor="payOrPlay">Play</label>
+            <input type="radio" name="payOrPlay" id="payOrPlay" value="Play" />
+          </>
         );
       default:
         return (

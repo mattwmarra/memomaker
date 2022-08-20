@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavBar from './components/NavBar';
 import './App.css';
 import DealMemoWrapper from './components/DealMemoWrapper';
 import Form from './components/Form';
@@ -11,7 +12,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Memo Maker</h1>
+      <NavBar />
       <Form showDocument={showDocument} />
       {displayDocument ? <DealMemoWrapper /> : null}
     </div>

@@ -1,7 +1,7 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import DealMemo from './DealMemo';
 import { PDFViewer } from '@react-pdf/renderer';
+import DealMemo from './DealMemo';
 
 function DealMemoWrapper() {
   const formData = useSelector((state) => state);

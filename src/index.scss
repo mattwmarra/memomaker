@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&display=swap');
 
 $font: 'Montserrat', sans-serif;
 
@@ -69,9 +69,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 .form-item {
-  width: 50vw;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 1rem;
   div {
     text-align: left;
@@ -98,6 +99,32 @@ button:focus-visible {
   }
 }
 
+.nav-bar {
+  display: flex;
+  border-bottom: 1px  solid #1a1a1a ;
+  p {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+
+.form-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 3% 0;
+  h3 {
+    width: 100%;
+  }
+  .production {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      width: 50%;
+    }
+  }
+}
 
 // @media (prefers-color-scheme: light) {
 //   :root {

@@ -1,36 +1,56 @@
 const initialState = {
   artistName: '',
   projectName: '',
-  loanOut: '',
-  startDate: [Date],
+  startDate: new Date().getUTCDate,
   role: '',
-  company: '',
-  compensation: 0,
-  contigency: '',
-  guarantee: '',
-  dates: [Date],
-  location: '',
+  artistEmail: '',
+  artistCell: '',
+  idNumber: '',
+  artistAddress: undefined,
+
+  // production company info
+  companyName: '',
+  producerName: '',
+  producerEmail: '',
+  producerPhone: '',
+
+  // agency company info
+  agencyName: '',
+  agencyAddres: undefined,
+  agencyEmail: '',
+  agencyPhone: '',
+
+  // production company info
+  managerName: '',
+  managerAddres: undefined,
+  managerEmail: '',
+  managerPhone: '',
+
+  loanOutNumber: '',
+  payOrPlay: 'pay',
+  workDays: 0,
+  travelDays: 0,
   payment: '',
-  wireInformation: '',
-  workDay: 0,
-  postProdDays: 0,
-  transportation: '',
-  dressingRoom: '',
-  directorsMeeting: '',
   perDiem: 0,
   billingBlock: '',
-  approvals: 0,
-  merchandising: '',
-  union: '',
-  fo: '',
-  idemnities: '',
-  provisions: '',
-  MHWardrobe: '',
-  security: '',
-  assistant: 0,
+  otherDetails: '',
+  rehearsalsAndFittings: '',
+
+  // details
+  transportation: '',
+  dressingRoom: '',
+  lodging: '',
+  hairDetails: '',
+  makeupDetails: '',
+  specialArrangements: '',
+  postProductionDays: 0,
+  ADRDays: 0,
+
+  // agreements
+  personalAssistant: 0,
   premiereTickets: 0,
   physicalCopy: '',
-  signed: false,
+  additionalNotes: '',
 };
 
 export default initialState;

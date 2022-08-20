@@ -29,6 +29,7 @@ function Form({ showDocument }) {
 
   return (
     <div className="object-list">
+      <h2>Form: Deal Memo</h2>
       <FormSection
         name="Primary Information"
         object={primary}
@@ -79,6 +80,3 @@ function Form({ showDocument }) {
 }
 
 export default Form;
-function dispatch(arg0: { payload: undefined; type: string }) {
-  throw new Error('Function not implemented.');
-}
